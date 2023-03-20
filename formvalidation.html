@@ -1,0 +1,58 @@
+<html>
+<title>
+Form validation</title>
+<head>
+<script type="text/javascript">
+
+function validate()
+{
+
+if (document.myForm.name.value == "")
+{
+alert("Please provide your name!");
+document.myForm.name.focus();
+return false;
+}
+
+if (document.myForm.email.value == "")
+{
+alert("Please provide your Email!");
+document.myForm.email.focus();
+return false;
+}
+
+if (document.myForm.contact.value == "")
+{
+alert("Please provide your contact details!");
+document.myForm.contact.focus();
+return false;
+}
+
+
+
+return(true);
+}
+
+</script>
+</head
+<body>
+
+<form name="myForm" onsubmit = "return(validate());">
+
+Name:
+<input type="text" name="name">
+<br><br>
+
+Email:
+<input type="text" name="email">
+<br><br>
+
+Mobile Number:
+<input type="text" name="contact">
+<br><br>
+
+
+<input type="submit">
+</form>
+</body>
+</html>
